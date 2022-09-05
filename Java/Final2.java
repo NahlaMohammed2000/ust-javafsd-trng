@@ -1,11 +1,12 @@
 package secondset.ust;
 
-public class Final1 {
-	final int DAYS_IN_WEEK;
-	{
+public class Final2 {
+	final static int DAYS_IN_WEEK;
+	static{
 		DAYS_IN_WEEK=7;
 	}
 	public static void main(String args[]) {
-		Final1 f=new Final1();
+		Final2 f=new Final2();
 	}
+
 }
