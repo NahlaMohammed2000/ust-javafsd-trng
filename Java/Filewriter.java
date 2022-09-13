@@ -7,7 +7,7 @@ public class Filewriter {
 	public static void main(String args[]) {
 		String data="Data in output file";
 		try {
-			FileWriter file=new FileWriter("output.txt");
+			FileWriter file=new FileWriter("C:\Users\ustjavafsdb224\\output.txt");
 			BufferedWriter output=new BufferedWriter(file);
 			output.write(data);
 			output.close();
