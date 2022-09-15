@@ -1,19 +1,19 @@
-package com.ust;
+package sixth.ust;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
 
 public class Example {
-	public static void main(String args[])
-	{
-		char a='G';
-		int i=89;
-		byte b=4;
-		short s=56;
-		double d =4.3554553532;
-		float f=4.7333434f;
-		System.out.println("char:" +a);
-		System.out.println("integer:" +i);
-		System.out.println("byte:" +b);
-		System.out.println("short:" +s);
-		System.out.println("float:" +f);
-		System.out.println("double:" +d);
+	public static void main(String[] args) {
+		ArrayList<Integer>list=new ArrayList<Integer>();
+		list.add(14);
+		list.add(2);
+		list.add(73);
+		Enumeration en=Collections.enumeration(list);
+		while(en.hasMoreElements()) {
+			System.out.println(en.nextElement());
+		}
+		
 	}
 }
