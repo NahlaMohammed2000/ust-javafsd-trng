@@ -1,19 +1,13 @@
-package abst.ust;
-
-interface Vehicle{
-	public abstract String getColour();
-	public abstract String getEngineType();
-	public static final int x=4;
+package lamda.ust;
+@FunctionalInterface
+interface MyInterface{
+	double getPiValue();
 }
 
-abstract public class Interfaceeg implements Vehicle {
-	public String getColour()
-	{
-		return "Green";
+public class Interfaceeg {
+	public static void main(String[] args) {
+		MyInterface ref;
+		ref=()->3.1415;
+		System.out.println("Value of Pi= "+ref.getPiValue());
 	}
-	/**public String getEngineType() {
-		return "Manual";
-	}
-	*/
-
 }
