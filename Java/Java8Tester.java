@@ -1,16 +1,30 @@
-package lamda.ust;
-
-import java.util.ArrayList;
-import java.util.List;
+package Optional;
 
 public class Java8Tester {
 	public static void main(String[] args) {
-		List names=new ArrayList();
-		names.add("Mahesh");
-		names.add("Suresh");
-		names.add("Ramesh");
-		names.add("Naresh");
+		Vehicle vehicle=new Car();
+		vehicle.print();
+	}
+}
+interface Vehicle{
+	default void print() {
+		System.out.println("I m a vehicle");
+	}
+	static void blowHorn() {
+		System.out.println("Blowing horn");
+	}
+}
+interface FourWheeler{
+	default void print() {
+		System.out.println("I am a four wheeler");
+	}
+}
+class Car implements Vehicle,FourWheeler{
+	public void print() {
+		Vehicle.super.print();
+		FourWheeler.super.print();
+		Vehicle.blowHorn();
+		System.out.println("I m a car");
 		
-		names.forEach(System.out::println);
 	}
 }
