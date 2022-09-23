@@ -1,0 +1,45 @@
+Java8 Features:
+
+1.Lambda Expressions
+The purpose of lambda expression was to favour the functional interfaces and method references.
+Lambda expressions code resembles a functional code.
+-> indicates that it is a lambda expression.
+
+2.Method References
+used to point or refer to the functional interface method
+Types of method reference
+-Reference to a static method.
+-Reference to an instance method.
+-Reference to a constructor
+
+3.Functional Interfaces
+Functional interface can have only 1 abstract method whereas it can have static and default methods whose body is defined under it.
+To use lambda expression in JAVA,we need to either create our own functional interface provided by JAVA.While creating our own functional interface,
+mark it with @FunctionalInterfaces annotation,this annotation is intoduced in JAVA 8.
+
+
+4.Optional
+This is a class newly intoduced as part of java and basically to deal with NullPointerExceptions.Using this class we can easily check whether a variable has null value or not.
+
+5.Stream
+A Stream in JAVA 8 can be defined as the sequence of elements from a source to destination.Streams supports aggregate operations on the data returned from collections, arrays, I/O operations.
+Stream does not store the elements.It simply performs the aggregate operations to get the desired stream of data.
+Aggregate operations that we perform on the collection, array or any other data source do not change the data of the source, they simply return a new stream.
+
+6.forEach()
+This method is to Iterate over collections and streams in JAVA.We can also use method reference in the forEach method.
+Stream forEach() method performs an action for each element of the stream.
+Input to the forEach() method is consumer which is Functional Interface.
+Using forEach() method we will Iterate through all elements and print to console using lambda expression as well as method reference.
+
+7.Default Methods
+-Syntax public interface vehicle { default void print () { System.out.println ("I am a vehicle!"); } }
+- Before default methods in Java 8, interfaces could only have abstract methods.To resolve this issue, 
+default methods allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
+
+8.Static method
+Static Methods in Interface are similar to default method so we need not to implement them in the Implementation classes.We can safely add them to the exixting interfaces without changing the code in the implementation classes.
+
+9.Collectors class
+Collectors is a final class that extends the object class which provided reduction operations ,such as accumulationg elements into collections,summerizing elements according to various criteria ,grouping etc.
+
