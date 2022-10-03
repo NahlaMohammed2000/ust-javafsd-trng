@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function check(){
+		var fname1=document.getElementById("fname").value;
+		var lname1=document.getElementById("lname").value;
+		var city1=document.getElementById("city").value;
+		document.write("<h2>Welcome to the page.Your details are:</h2>");
+		document.write("Your name is:"+fname1+" "+lname1);
+		document.write("<br>");
+		document.write("Your city:"+city1);
+		
+	}
+</script>
+<style>
+	.container{
+		background-color: #f2f2f2;
+		padding:20px;
+	}
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+	<form>
+  		<label>First name:</label><br>
+  		<input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+  		
+  		<label >Last name:</label><br>
+ 		<input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+ 		
+ 		<label >City:</label><br>
+ 		<input type="text" id="city" name="city" placeholder="Enter your city" ><br><br>
+ 		
+ 		<input type="submit" value="Submit" onclick="check()">
+</form>
+</div>
+
+</body>
+</html>
