@@ -1,6 +1,14 @@
-package fifthday.ust;
+package abst.ust;
 
+/**
+ * The type Arithmetic.
+ */
 public class Arithmetic {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		try {
 			int array[]=new int[10];
